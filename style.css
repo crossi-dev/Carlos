@@ -135,11 +135,11 @@ body {
 }
 
 .hero-lang {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--border);
+  color: var(--muted);
   margin-bottom: 1.75rem;
 }
 
