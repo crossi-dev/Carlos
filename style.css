@@ -211,6 +211,9 @@ body {
 /* ── Sections ── */
 section {
   padding: 7rem 3rem;
+}
+
+section + section {
   border-top: 1px solid var(--border);
 }
 
@@ -299,18 +302,20 @@ section {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .project-card {
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 2.5rem 0;
   background: transparent;
   border-right: 1px solid var(--border);
   transition: background 0.2s;
 }
 
-.project-card:last-child { border-right: none; }
-.project-card:hover { background: var(--card); }
+.project-card:first-child { padding-left: 0; }
+.project-card:last-child { border-right: none; padding-right: 0; }
+.project-card:hover { background: transparent; }
 
 .project-card h3 {
   font-size: 0.95rem;
