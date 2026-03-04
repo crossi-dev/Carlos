@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">CR</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name">Welcome, I'm Carlos Rossi</h1>
+      <h2 class="hero-title">Full Stack Developer</h2>
+      <p class="hero-desc">My work philosophy: less is more.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-container">
+      <span class="section-label">About</span>
+      <h2 class="section-title">Full stack developer.<br>Detail-oriented.</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I build clean, functional products. Design and code, end to end.</p>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years of exp.</span></div>
+          <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-container">
+      <span class="section-label">Work</span>
+      <h2 class="section-title">Selected projects.</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>E-Commerce App</h3>
+          <p>Full-featured store with cart, auth, and payments.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Demo</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Dashboard Analytics</h3>
+          <p>Live metrics with interactive charts and filters.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Chart.js</span><span>API REST</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Demo</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Real-Time Chat</h3>
+          <p>Rooms, users, and live notifications.</p>
+          <div class="project-tags">
+            <span>Socket.io</span><span>Express</span><span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Demo</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-container">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let's work together.</h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email" required />
+        </div>
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your message..." rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Carlos Rossi &mdash; 2026</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
