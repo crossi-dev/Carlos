@@ -209,7 +209,10 @@ body {
 .btn-ghost:hover { border-color: var(--muted); color: var(--text); background: transparent; }
 
 /* ── Sections ── */
-section { padding: 7rem 3rem; }
+section {
+  padding: 7rem 3rem;
+  border-top: 1px solid var(--border);
+}
 
 .section-container { max-width: 900px; margin: 0 auto; }
 
@@ -219,7 +222,7 @@ section { padding: 7rem 3rem; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 3.5rem;
+  margin-bottom: 0.6rem;
   display: block;
 }
 
@@ -232,7 +235,7 @@ section { padding: 7rem 3rem; }
 }
 
 /* ── About ── */
-#about { background: var(--bg2); }
+#about { background: var(--bg); }
 
 .about-grid {
   display: grid;
@@ -301,7 +304,7 @@ section { padding: 7rem 3rem; }
 
 .project-card {
   padding: 2.5rem;
-  background: var(--bg);
+  background: transparent;
   border-right: 1px solid var(--border);
   transition: background 0.2s;
 }
@@ -345,7 +348,7 @@ section { padding: 7rem 3rem; }
 .project-links { display: flex; gap: 0.5rem; }
 
 /* ── Contact ── */
-#contact { background: var(--bg2); }
+#contact { background: var(--bg); }
 
 .contact-links {
   display: flex;
