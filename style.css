@@ -134,6 +134,15 @@ body {
   margin-bottom: 1.75rem;
 }
 
+.hero-lang {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--border);
+  margin-bottom: 1.75rem;
+}
+
 .hero-desc {
   font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 300;
