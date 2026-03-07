@@ -36,6 +36,7 @@ body {
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 100;
+  transition: padding 0.3s ease;
 }
 
 .nav-logo {
@@ -318,7 +319,7 @@ section + section {
 
 .project-card:first-child { padding-left: 0; }
 .project-card:last-child { border-right: none; padding-right: 0; }
-.project-card:hover { background: transparent; }
+.project-card:hover { background: var(--card); }
 
 .project-card h3 {
   font-size: 0.95rem;
@@ -409,6 +410,12 @@ footer {
   .projects-grid { grid-template-columns: 1fr; }
   .project-card { border-right: none; border-bottom: 1px solid var(--border); }
   .project-card:last-child { border-bottom: none; }
+}
+
+/* ── Focus styles ── */
+:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* ── Fade-in ── */

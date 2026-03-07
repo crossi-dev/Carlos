@@ -28,23 +28,8 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll(
-  '.about-text, .about-card, .project-card, .contact-form, .social-links'
+  '.about-text, .about-card, .project-card'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
-});
-
-// ── Contact form ──
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Message sent!';
-  btn.style.background = '#22c55e';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Enviar mensaje';
-    btn.style.background = '';
-    btn.disabled = false;
-    e.target.reset();
-  }, 3000);
 });
